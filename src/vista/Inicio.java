@@ -46,7 +46,7 @@ public class Inicio extends javax.swing.JFrame {
         lblMensaje.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
         jLabel3.setFont(new java.awt.Font("Ink Free", 1, 18)); // NOI18N
-        jLabel3.setText("Usuario:");
+        jLabel3.setText("Usuario");
 
         jLabel4.setFont(new java.awt.Font("Ink Free", 1, 18)); // NOI18N
         jLabel4.setText("Contraseña");
@@ -77,15 +77,9 @@ public class Inicio extends javax.swing.JFrame {
                     .addComponent(lblMensaje, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtusuContrasena, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(jLabel3))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(txtusuId, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(3, 3, 3)
-                            .addComponent(jLabel4)))
+                        .addComponent(jLabel3)
+                        .addComponent(txtusuId, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel4))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton1)
                         .addGap(69, 69, 69)))
