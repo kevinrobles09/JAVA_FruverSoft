@@ -7,6 +7,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
+import vista.Inicio;
+import vista.productosVistaPrincipal;
 
 /**
  *
@@ -44,8 +46,18 @@ public class iniciarSesion {
                            
                            
                            System.out.println("bienvenido administrador");
+                           productosVistaPrincipal llamadaAdmin = new productosVistaPrincipal();
+                           llamadaAdmin.setVisible(true);
+                           
+                            
                        }else{
                            System.out.println("no eres administrador");
+                           productosVistaPrincipal llamadaCliente = new productosVistaPrincipal();
+                           llamadaCliente.btnInsertar.setVisible(false);
+                           llamadaCliente.btneliminar.setVisible(false);
+                           llamadaCliente.btnmodificar.setVisible(false);
+                           llamadaCliente.setVisible(true);
+                                                                               
                        }
                       
                  }else{
