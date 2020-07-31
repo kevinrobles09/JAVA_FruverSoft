@@ -32,7 +32,7 @@ public class iniciarSesion {
             miCursor=miConexion.prepareStatement("SELECT usuId, usuContrasena, tblroles_rolId FROM tblusuarios WHERE usuId= ?");
             miCursor.setString(1, txtusuId.getText());
             rs = miCursor.executeQuery();
-                       
+                  
             
                  if (rs.next()) {
                     usuarioCorrecto = rs.getString(1);
@@ -48,6 +48,7 @@ public class iniciarSesion {
                            System.out.println("bienvenido administrador");
                            productosVistaPrincipal llamadaAdmin = new productosVistaPrincipal();
                            llamadaAdmin.setVisible(true);
+                         
                            
                             
                        }else{

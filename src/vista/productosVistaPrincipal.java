@@ -16,6 +16,7 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
      */
     public productosVistaPrincipal() {
         initComponents();
+        
        
     }
 
@@ -50,21 +51,45 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         jL_frutas.setForeground(new java.awt.Color(0, 153, 0));
         jL_frutas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/frutas_pequenas.png"))); // NOI18N
         jL_frutas.setText("FRUTAS");
+        jL_frutas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jL_frutas.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jL_frutasMouseClicked(evt);
+            }
+        });
 
         jL_frutas1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jL_frutas1.setForeground(new java.awt.Color(0, 153, 0));
         jL_frutas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/verduras_pequenas.png"))); // NOI18N
         jL_frutas1.setText("VERDURAS");
+        jL_frutas1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jL_frutas1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jL_frutas1MouseClicked(evt);
+            }
+        });
 
         jL_frutas2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jL_frutas2.setForeground(new java.awt.Color(0, 153, 0));
         jL_frutas2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/granos_pequenas.png"))); // NOI18N
         jL_frutas2.setText("GRANOS");
+        jL_frutas2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jL_frutas2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jL_frutas2MouseClicked(evt);
+            }
+        });
 
         jL_frutas3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jL_frutas3.setForeground(new java.awt.Color(0, 153, 0));
         jL_frutas3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/tuberculos_pequenas.png"))); // NOI18N
         jL_frutas3.setText("TUBERCULOS");
+        jL_frutas3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jL_frutas3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jL_frutas3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -162,6 +187,26 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jL_frutasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_frutasMouseClicked
+        proCatFrutas frutas = new proCatFrutas();
+        frutas.setVisible(true);
+    }//GEN-LAST:event_jL_frutasMouseClicked
+
+    private void jL_frutas1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_frutas1MouseClicked
+        proCatVerduras verduras = new proCatVerduras();
+        verduras.setVisible(true);
+    }//GEN-LAST:event_jL_frutas1MouseClicked
+
+    private void jL_frutas2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_frutas2MouseClicked
+        proCatGranos granos = new proCatGranos();
+        granos.setVisible(true);
+    }//GEN-LAST:event_jL_frutas2MouseClicked
+
+    private void jL_frutas3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_frutas3MouseClicked
+       proCatTuberculos tuberculos = new proCatTuberculos();
+       tuberculos.setVisible(true);
+    }//GEN-LAST:event_jL_frutas3MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -189,7 +234,7 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         }
         //</editor-fold>
         //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

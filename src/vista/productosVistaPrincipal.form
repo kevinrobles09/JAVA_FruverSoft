@@ -140,7 +140,13 @@
               <Image iconType="3" name="/Imagenes/frutas_pequenas.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="FRUTAS"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor de Mano"/>
+            </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jL_frutasMouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jL_frutas1">
           <Properties>
@@ -154,7 +160,13 @@
               <Image iconType="3" name="/Imagenes/verduras_pequenas.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="VERDURAS"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor de Mano"/>
+            </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jL_frutas1MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jL_frutas2">
           <Properties>
@@ -168,7 +180,13 @@
               <Image iconType="3" name="/Imagenes/granos_pequenas.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="GRANOS"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor de Mano"/>
+            </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jL_frutas2MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jL_frutas3">
           <Properties>
@@ -182,7 +200,13 @@
               <Image iconType="3" name="/Imagenes/tuberculos_pequenas.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="TUBERCULOS"/>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Cursor de Mano"/>
+            </Property>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jL_frutas3MouseClicked"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

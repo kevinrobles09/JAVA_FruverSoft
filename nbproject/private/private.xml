@@ -4,7 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/D:/USUARIO/MECO/Documents/NetBeansProjects/FruverSoft/src/vista/productosVistaPrincipal.java</file>
-            <file>file:/D:/USUARIO/MECO/Documents/NetBeansProjects/FruverSoft/src/vista/Inicio.java</file>
+            <file>file:/D:/USUARIO/MECO/Documents/NetBeansProjects/FruverSoft/src/vista/productos_categorias.java</file>
+            <file>file:/D:/USUARIO/MECO/Documents/NetBeansProjects/FruverSoft/src/controlador/Conexion.java</file>
+            <file>file:/D:/USUARIO/MECO/Documents/NetBeansProjects/FruverSoft/src/modelo/pCategoria.java</file>
             <file>file:/D:/USUARIO/MECO/Documents/NetBeansProjects/FruverSoft/src/modelo/iniciarSesion.java</file>
         </group>
     </open-files>
