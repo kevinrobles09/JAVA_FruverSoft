@@ -6,6 +6,10 @@
 
 package vista;
 
+import controlador.Conexion;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import modelo.iniciarSesion;
 
 /**
@@ -125,8 +129,61 @@ public class Inicio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        iniciarSesion log =new iniciarSesion();
-        log.entrar(txtusuId, txtusuContrasena, lblMensaje);
+        //iniciarSesion log =new iniciarSesion();
+        //log.entrar(txtusuId, txtusuContrasena, lblMensaje);
+        
+                String usuario  = txtusuId.getText();
+        String password = txtusuContrasena.getText();
+        
+        try {
+            String usuarioCorrecto = null;
+            String passwordCorrecta = null;
+            String tipoUsuario= null;
+            
+            Conexion cn = new Conexion();
+            Connection miConexion=cn.obtenerConexion();
+            PreparedStatement miCursor;
+            ResultSet rs;
+            
+            miCursor=miConexion.prepareStatement("SELECT usuId, usuContrasena, tblroles_rolId FROM tblusuarios WHERE usuId= ?");
+            miCursor.setString(1, txtusuId.getText());
+            rs = miCursor.executeQuery();
+                  
+            
+                 if (rs.next()) {
+                    usuarioCorrecto = rs.getString(1);
+                    passwordCorrecta = rs.getString(2);
+                    tipoUsuario = rs.getString(3);
+                    
+                 }
+                 
+                 if (usuarioCorrecto != null && password !=null && password.equals(passwordCorrecta)){                
+                       if (tipoUsuario.equals("1")){
+                           
+                           
+                           System.out.println("bienvenido administrador");
+                           productosVistaPrincipal llamadaAdmin = new productosVistaPrincipal();
+                           llamadaAdmin.setVisible(true);
+                           this.dispose();
+                                            
+                       }else{
+                           System.out.println("no eres administrador");
+                           productosVistaPrincipal llamadaCliente = new productosVistaPrincipal();
+                           llamadaCliente.btnInsertar.setVisible(false);
+                           llamadaCliente.btneliminar.setVisible(false);
+                           llamadaCliente.btnmodificar.setVisible(false);
+                           llamadaCliente.setVisible(true);
+                                                                               
+                       }
+                      
+                 }else{
+                     
+                     lblMensaje.setText("Usuario o Contraseña incorrecta");
+                 }
+            
+        } catch (Exception e) {
+            System.out.println("ERROR");
+        }
             
     }//GEN-LAST:event_jButton1MouseClicked
 

@@ -227,6 +227,8 @@ public class proCatFrutas extends javax.swing.JFrame {
     private void btnRegresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegresarMouseClicked
         productosVistaPrincipal regresar = new productosVistaPrincipal();
         regresar.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_btnRegresarMouseClicked
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed

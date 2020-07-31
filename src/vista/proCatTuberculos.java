@@ -227,11 +227,13 @@ public class proCatTuberculos extends javax.swing.JFrame {
     private void btnRegresarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegresarMouseClicked
         productosVistaPrincipal regresar = new productosVistaPrincipal();
         regresar.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_btnRegresarMouseClicked
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        productosVistaPrincipal regresar = new productosVistaPrincipal();
-        regresar.setVisible(true);
+        //productosVistaPrincipal regresar = new productosVistaPrincipal();
+        //regresar.setVisible(true);
     }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**

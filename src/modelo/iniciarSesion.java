@@ -13,6 +13,8 @@ import vista.productosVistaPrincipal;
 /**
  *
  * @author Kevin Robles
+ * ÉSTE ES LA CLASE LOGIN PERO SE VA A COPIAR A LA VISTA INICIO, 
+ * PARA PODER OCULTAR LA VISTA AL SER TRUE EL LOGIN
  */
 public class iniciarSesion {
     public void entrar(JTextField txtusuId, JTextField txtusuContrasena, JLabel lblMensaje) {
@@ -48,9 +50,7 @@ public class iniciarSesion {
                            System.out.println("bienvenido administrador");
                            productosVistaPrincipal llamadaAdmin = new productosVistaPrincipal();
                            llamadaAdmin.setVisible(true);
-                         
-                           
-                            
+                                            
                        }else{
                            System.out.println("no eres administrador");
                            productosVistaPrincipal llamadaCliente = new productosVistaPrincipal();

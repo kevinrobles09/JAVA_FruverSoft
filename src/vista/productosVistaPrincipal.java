@@ -190,21 +190,25 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
     private void jL_frutasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_frutasMouseClicked
         proCatFrutas frutas = new proCatFrutas();
         frutas.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jL_frutasMouseClicked
 
     private void jL_frutas1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_frutas1MouseClicked
         proCatVerduras verduras = new proCatVerduras();
         verduras.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jL_frutas1MouseClicked
 
     private void jL_frutas2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_frutas2MouseClicked
         proCatGranos granos = new proCatGranos();
         granos.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jL_frutas2MouseClicked
 
     private void jL_frutas3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jL_frutas3MouseClicked
        proCatTuberculos tuberculos = new proCatTuberculos();
        tuberculos.setVisible(true);
+       this.dispose();
     }//GEN-LAST:event_jL_frutas3MouseClicked
 
     /**

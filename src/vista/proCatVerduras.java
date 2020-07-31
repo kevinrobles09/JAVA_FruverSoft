@@ -96,8 +96,8 @@ public class proCatVerduras extends javax.swing.JFrame {
         btneliminar_categoria = new javax.swing.JButton();
         jButton4_categoria = new javax.swing.JButton();
         jL_categoria = new javax.swing.JLabel();
-        btnRegresar2 = new javax.swing.JButton();
-        btnRegresar3 = new javax.swing.JButton();
+        btnRegresar = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("PRODUCTOS");
@@ -160,24 +160,18 @@ public class proCatVerduras extends javax.swing.JFrame {
         jL_categoria.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jL_categoria.setText("VERDURAS");
 
-        btnRegresar2.setText("Regresar");
-        btnRegresar2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRegresar2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnRegresar2MouseClicked(evt);
-            }
-        });
+        btnRegresar.setText("Regresar");
+        btnRegresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        btnRegresar3.setText("Regresar");
-        btnRegresar3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnRegresar3.addMouseListener(new java.awt.event.MouseAdapter() {
+        jButton1.setText("Regresar");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                btnRegresar3MouseClicked(evt);
+                jButton1MouseClicked(evt);
             }
         });
-        btnRegresar3.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegresar3ActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
@@ -190,8 +184,8 @@ public class proCatVerduras extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(btnRegresar3)
-                        .addGap(62, 62, 62)
+                        .addComponent(jButton1)
+                        .addGap(66, 66, 66)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jL_categoria, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1))
@@ -209,19 +203,20 @@ public class proCatVerduras extends javax.swing.JFrame {
                 .addGap(53, 53, 53))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(209, 209, 209)
-                    .addComponent(btnRegresar2)
-                    .addContainerGap(210, Short.MAX_VALUE)))
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(btnRegresar)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(9, 9, 9)
-                        .addComponent(btnRegresar3)))
+                        .addContainerGap()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jButton1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jL_categoria)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -235,27 +230,23 @@ public class proCatVerduras extends javax.swing.JFrame {
                 .addGap(48, 48, 48))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(304, 304, 304)
-                    .addComponent(btnRegresar2)
-                    .addContainerGap(305, Short.MAX_VALUE)))
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(btnRegresar)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnRegresar2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegresar2MouseClicked
-        productosVistaPrincipal regresar = new productosVistaPrincipal();
-        regresar.setVisible(true);
-    }//GEN-LAST:event_btnRegresar2MouseClicked
-
-    private void btnRegresar3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnRegresar3MouseClicked
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnRegresar3MouseClicked
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void btnRegresar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresar3ActionPerformed
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         productosVistaPrincipal regresar = new productosVistaPrincipal();
         regresar.setVisible(true);
-    }//GEN-LAST:event_btnRegresar3ActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_jButton1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -312,10 +303,10 @@ public class proCatVerduras extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnInsertar_categora;
-    private javax.swing.JButton btnRegresar2;
-    private javax.swing.JButton btnRegresar3;
+    private javax.swing.JButton btnRegresar;
     public javax.swing.JButton btneliminar_categoria;
     public javax.swing.JButton btnmodificar_categoria;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton4_categoria;
     private javax.swing.JLabel jL_categoria;
     private javax.swing.JLabel jLabel1;
