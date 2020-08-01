@@ -10,6 +10,7 @@ import controlador.Conexion;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import javax.swing.JOptionPane;
 import modelo.iniciarSesion;
 
 /**
@@ -165,6 +166,7 @@ public class Inicio extends javax.swing.JFrame {
                            productosVistaPrincipal llamadaAdmin = new productosVistaPrincipal();
                            llamadaAdmin.setVisible(true);
                            this.dispose();
+                           JOptionPane.showMessageDialog(null, "Bienvenido Administrador");
                                             
                        }else{
                            System.out.println("no eres administrador");

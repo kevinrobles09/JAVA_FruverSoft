@@ -131,6 +131,11 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         btneliminar.setText("ELIMINAR");
 
         jButton4.setText("BUSCAR");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 153, 0));
@@ -210,6 +215,12 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
        tuberculos.setVisible(true);
        this.dispose();
     }//GEN-LAST:event_jL_frutas3MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        proBusGeneral llamadaVista = new proBusGeneral();
+        llamadaVista.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton4MouseClicked
 
     /**
      * @param args the command line arguments
