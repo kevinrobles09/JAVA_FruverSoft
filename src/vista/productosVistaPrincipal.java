@@ -7,7 +7,7 @@ package vista;
 
 /**
  *
- * @author MECO
+ * @author Kevin Robles
  */
 public class productosVistaPrincipal extends javax.swing.JFrame {
 
@@ -29,6 +29,7 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jL_frutas = new javax.swing.JLabel();
         jL_frutas1 = new javax.swing.JLabel();
@@ -40,6 +41,12 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         btneliminar = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        menuProvedores = new javax.swing.JMenu();
+        subMenuProvedores = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        subMenuRoles = new javax.swing.JMenuItem();
+        subMenuEstados = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("PRODUCTOS");
@@ -141,6 +148,47 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 153, 0));
         jLabel2.setText("PRODUCTOS");
 
+        jMenuBar1.setBorder(null);
+
+        menuProvedores.setText("Proveedores");
+
+        subMenuProvedores.setText("Agregar");
+        subMenuProvedores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subMenuProvedoresActionPerformed(evt);
+            }
+        });
+        menuProvedores.add(subMenuProvedores);
+
+        jMenuBar1.add(menuProvedores);
+
+        jMenu2.setText("Usuarios");
+        jMenu2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu2ActionPerformed(evt);
+            }
+        });
+
+        subMenuRoles.setText("Roles");
+        subMenuRoles.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subMenuRolesActionPerformed(evt);
+            }
+        });
+        jMenu2.add(subMenuRoles);
+
+        subMenuEstados.setText("Estados");
+        subMenuEstados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subMenuEstadosActionPerformed(evt);
+            }
+        });
+        jMenu2.add(subMenuEstados);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -222,6 +270,26 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton4MouseClicked
 
+    private void subMenuProvedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuProvedoresActionPerformed
+        ingresoProvedores llamarProveedores = new  ingresoProvedores();
+       llamarProveedores.setVisible(true);
+    }//GEN-LAST:event_subMenuProvedoresActionPerformed
+
+    private void subMenuRolesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuRolesActionPerformed
+        Roles llamarRoles = new Roles();
+        llamarRoles.setVisible(true);
+    }//GEN-LAST:event_subMenuRolesActionPerformed
+
+    private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
+
+    }//GEN-LAST:event_jMenu2ActionPerformed
+
+    private void subMenuEstadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuEstadosActionPerformed
+        Estados llamarEstado = new Estados();
+        llamarEstado.setVisible(true);
+              
+    }//GEN-LAST:event_subMenuEstadosActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -269,6 +337,13 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jL_frutas3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JMenu menuProvedores;
+    private javax.swing.JMenuItem subMenuEstados;
+    private javax.swing.JMenuItem subMenuProvedores;
+    private javax.swing.JMenuItem subMenuRoles;
     // End of variables declaration//GEN-END:variables
 }

@@ -96,7 +96,6 @@ public class proCatVerduras extends javax.swing.JFrame {
         btneliminar_categoria = new javax.swing.JButton();
         jButton4_categoria = new javax.swing.JButton();
         jL_categoria = new javax.swing.JLabel();
-        btnRegresar = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -160,9 +159,6 @@ public class proCatVerduras extends javax.swing.JFrame {
         jL_categoria.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jL_categoria.setText("VERDURAS");
 
-        btnRegresar.setText("Regresar");
-        btnRegresar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
         jButton1.setText("Regresar");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -201,11 +197,6 @@ public class proCatVerduras extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jButton4_categoria)
                 .addGap(53, 53, 53))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(btnRegresar)
-                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -228,11 +219,6 @@ public class proCatVerduras extends javax.swing.JFrame {
                     .addComponent(btneliminar_categoria)
                     .addComponent(jButton4_categoria))
                 .addGap(48, 48, 48))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(btnRegresar)
-                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
@@ -303,7 +289,6 @@ public class proCatVerduras extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnInsertar_categora;
-    private javax.swing.JButton btnRegresar;
     public javax.swing.JButton btneliminar_categoria;
     public javax.swing.JButton btnmodificar_categoria;
     private javax.swing.JButton jButton1;
