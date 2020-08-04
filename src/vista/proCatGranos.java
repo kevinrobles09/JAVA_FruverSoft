@@ -91,10 +91,6 @@ public class proCatGranos extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jt_cate_productos = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
-        btnInsertar_categora = new javax.swing.JButton();
-        btnmodificar_categoria = new javax.swing.JButton();
-        btneliminar_categoria = new javax.swing.JButton();
-        jButton4_categoria = new javax.swing.JButton();
         jL_categoria = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
 
@@ -146,14 +142,6 @@ public class proCatGranos extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 153, 0));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/logo_pequeno.png"))); // NOI18N
 
-        btnInsertar_categora.setText("AGREGAR");
-
-        btnmodificar_categoria.setText("MODIFICAR");
-
-        btneliminar_categoria.setText("ELIMINAR");
-
-        jButton4_categoria.setText("BUSCAR");
-
         jL_categoria.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jL_categoria.setForeground(new java.awt.Color(0, 153, 0));
         jL_categoria.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -188,16 +176,6 @@ public class proCatGranos extends javax.swing.JFrame {
                             .addComponent(jLabel1))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnInsertar_categora)
-                .addGap(18, 18, 18)
-                .addComponent(btnmodificar_categoria)
-                .addGap(18, 18, 18)
-                .addComponent(btneliminar_categoria)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4_categoria)
-                .addGap(53, 53, 53))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -212,13 +190,7 @@ public class proCatGranos extends javax.swing.JFrame {
                 .addComponent(jL_categoria)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnInsertar_categora)
-                    .addComponent(btnmodificar_categoria)
-                    .addComponent(btneliminar_categoria)
-                    .addComponent(jButton4_categoria))
-                .addGap(48, 48, 48))
+                .addGap(106, 106, 106))
         );
 
         pack();
@@ -290,11 +262,7 @@ public class proCatGranos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnInsertar_categora;
     private javax.swing.JButton btnRegresar;
-    public javax.swing.JButton btneliminar_categoria;
-    public javax.swing.JButton btnmodificar_categoria;
-    private javax.swing.JButton jButton4_categoria;
     private javax.swing.JLabel jL_categoria;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;

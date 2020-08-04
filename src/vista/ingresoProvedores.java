@@ -63,7 +63,7 @@ public class ingresoProvedores extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("registrar");
+        jButton1.setText("Registrar");
 
         jLabel2.setText("nombre completo");
 
@@ -77,11 +77,11 @@ public class ingresoProvedores extends javax.swing.JFrame {
 
         jLabel7.setText("estado");
 
-        jButton3.setText("actualizar");
+        jButton3.setText("Actualizar");
 
-        jButton4.setText("eliminar");
+        jButton4.setText("Eliminar");
 
-        jButton5.setText("buscar");
+        jButton5.setText("Buscar");
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 153, 0));
@@ -89,7 +89,8 @@ public class ingresoProvedores extends javax.swing.JFrame {
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 153, 0));
-        jLabel9.setText("Agregar Proveedor");
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Proveedores");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -104,7 +105,7 @@ public class ingresoProvedores extends javax.swing.JFrame {
                                 .addComponent(jButton1)
                                 .addGap(18, 18, 18)
                                 .addComponent(jButton3)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                                 .addComponent(jButton4)
                                 .addGap(31, 31, 31)
                                 .addComponent(jButton5))

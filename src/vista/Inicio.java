@@ -7,6 +7,8 @@
 package vista;
 
 import controlador.Conexion;
+import java.awt.event.KeyEvent;
+import static java.awt.event.KeyEvent.VK_ENTER;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -73,6 +75,11 @@ public class Inicio extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton1KeyPressed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Ink Free", 1, 18)); // NOI18N
         jLabel5.setText("Iniciar Sesión");
@@ -133,7 +140,7 @@ public class Inicio extends javax.swing.JFrame {
         //iniciarSesion log =new iniciarSesion();
         //log.entrar(txtusuId, txtusuContrasena, lblMensaje);
         
-                String usuario  = txtusuId.getText();
+        String usuario  = txtusuId.getText();
         String password = txtusuContrasena.getText();
         
         try {
@@ -192,6 +199,10 @@ public class Inicio extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
+      
+    }//GEN-LAST:event_jButton1KeyPressed
 
     /**
      * @param args the command line arguments

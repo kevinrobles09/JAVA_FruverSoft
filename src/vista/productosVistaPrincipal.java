@@ -5,6 +5,8 @@
  */
 package vista;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Kevin Robles
@@ -30,6 +32,7 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jTabbedPane1 = new javax.swing.JTabbedPane();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jPanel1 = new javax.swing.JPanel();
         jL_frutas = new javax.swing.JLabel();
         jL_frutas1 = new javax.swing.JLabel();
@@ -44,9 +47,16 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         menuProvedores = new javax.swing.JMenu();
         subMenuProvedores = new javax.swing.JMenuItem();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         subMenuRoles = new javax.swing.JMenuItem();
         subMenuEstados = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("PRODUCTOS");
@@ -132,10 +142,25 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/logo_pequeno.png"))); // NOI18N
 
         btnInsertar.setText("AGREGAR");
+        btnInsertar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnInsertarMouseClicked(evt);
+            }
+        });
 
         btnmodificar.setText("MODIFICAR");
+        btnmodificar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnmodificarMouseClicked(evt);
+            }
+        });
 
         btneliminar.setText("ELIMINAR");
+        btneliminar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btneliminarMouseClicked(evt);
+            }
+        });
 
         jButton4.setText("BUSCAR");
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -152,13 +177,21 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
 
         menuProvedores.setText("Proveedores");
 
-        subMenuProvedores.setText("Agregar");
+        subMenuProvedores.setText("Crud");
         subMenuProvedores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 subMenuProvedoresActionPerformed(evt);
             }
         });
         menuProvedores.add(subMenuProvedores);
+
+        jMenuItem1.setText("Estados");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        menuProvedores.add(jMenuItem1);
 
         jMenuBar1.add(menuProvedores);
 
@@ -186,6 +219,34 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         jMenu2.add(subMenuEstados);
 
         jMenuBar1.add(jMenu2);
+
+        jMenu3.setText("Productos");
+
+        jMenuItem2.setText("Clasificación");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem2);
+
+        jMenuItem3.setText("U. Medida");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu3);
+
+        jMenu1.setText("Acerca de");
+        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu1MouseClicked(evt);
+            }
+        });
+        jMenuBar1.add(jMenu1);
 
         setJMenuBar(jMenuBar1);
 
@@ -270,15 +331,14 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton4MouseClicked
 
-    private void subMenuProvedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuProvedoresActionPerformed
-        ingresoProvedores llamarProveedores = new  ingresoProvedores();
-       llamarProveedores.setVisible(true);
-    }//GEN-LAST:event_subMenuProvedoresActionPerformed
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        Clasificacion llamadaClasificacion = new Clasificacion();
+        llamadaClasificacion.setVisible(true);
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void subMenuRolesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuRolesActionPerformed
-        Roles llamarRoles = new Roles();
-        llamarRoles.setVisible(true);
-    }//GEN-LAST:event_subMenuRolesActionPerformed
+    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
+        JOptionPane.showMessageDialog(null, "Kevin Robles\nJavier Sepulveda\n           2020");
+    }//GEN-LAST:event_jMenu1MouseClicked
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
 
@@ -287,8 +347,47 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
     private void subMenuEstadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuEstadosActionPerformed
         Estados llamarEstado = new Estados();
         llamarEstado.setVisible(true);
-              
+
     }//GEN-LAST:event_subMenuEstadosActionPerformed
+
+    private void subMenuRolesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuRolesActionPerformed
+        Roles llamarRoles = new Roles();
+        llamarRoles.setVisible(true);
+    }//GEN-LAST:event_subMenuRolesActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        Estados llamarEstado = new Estados();
+        llamarEstado.setVisible(true);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void subMenuProvedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subMenuProvedoresActionPerformed
+        ingresoProvedores llamarProveedores = new  ingresoProvedores();
+        llamarProveedores.setVisible(true);
+    }//GEN-LAST:event_subMenuProvedoresActionPerformed
+
+    private void btnInsertarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnInsertarMouseClicked
+        productoCrudAgregar agre = new productoCrudAgregar();
+        agre.setVisible(true);
+        this.dispose();
+                
+    }//GEN-LAST:event_btnInsertarMouseClicked
+
+    private void btnmodificarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnmodificarMouseClicked
+       productoCrud mod = new productoCrud();
+       mod.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_btnmodificarMouseClicked
+
+    private void btneliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btneliminarMouseClicked
+        productoCrud eli = new productoCrud();
+       eli.setVisible(true);
+       this.dispose();
+    }//GEN-LAST:event_btneliminarMouseClicked
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        unidadMedidas umedida = new unidadMedidas();
+        umedida.setVisible(true);
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -331,14 +430,20 @@ public class productosVistaPrincipal extends javax.swing.JFrame {
     public javax.swing.JButton btneliminar;
     public javax.swing.JButton btnmodificar;
     private javax.swing.JButton jButton4;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jL_frutas;
     private javax.swing.JLabel jL_frutas1;
     private javax.swing.JLabel jL_frutas2;
     private javax.swing.JLabel jL_frutas3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JMenu menuProvedores;
