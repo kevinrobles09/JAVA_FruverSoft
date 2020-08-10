@@ -6,6 +6,7 @@
 
 package vista;
 
+import vista.vistasClientes.productosVistaPrincipalCliente;
 import controlador.Conexion;
 import java.awt.event.KeyEvent;
 import static java.awt.event.KeyEvent.VK_ENTER;
@@ -177,11 +178,9 @@ public class Inicio extends javax.swing.JFrame {
                            JOptionPane.showMessageDialog(null, "Bienvenido Administrador");
                                             
                        }else{
-                           System.out.println("no eres administrador");
-                           productosVistaPrincipal llamadaCliente = new productosVistaPrincipal();
-                           llamadaCliente.btnInsertar.setVisible(false);
-                           llamadaCliente.btneliminar.setVisible(false);
-                           llamadaCliente.btnmodificar.setVisible(false);
+                           System.out.println("Bienvenido");
+                           JOptionPane.showMessageDialog(null, "Bienvenido");
+                           productosVistaPrincipalCliente llamadaCliente = new productosVistaPrincipalCliente();
                            llamadaCliente.setVisible(true);
                                                                                
                        }
